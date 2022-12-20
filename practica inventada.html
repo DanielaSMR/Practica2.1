@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo</title>
+    <link rel="stylesheet" href="style.css">
+<script>
+
+function funcion_nom(){
+    var nom = document.getElementById("name").value;
+    alert ('Benvingut' + " " + nom)
+}
+
+function funcion_edad(){
+    var age = document.getElementById("age").value;
+    alert ('Tens edad' + " " + age)
+}
+
+function funcion_direccion(){
+    var direccion = document.getElementById("direccion").value;
+    alert ('Vius a' + " " + direccion)
+}
+
+</script>
+</head>
+<body>
+    
+    Introduce tu nombre: <input type="text" id="name" onblur="funcion_nom()">
+    Introduce tu edad: <input type="text" id="age" onblur="funcion_edad()">
+    Introduce tu direccion: <input type="text" id="direccion" onblur="funcion_direccion()">
+
+
+</body>
+</html>

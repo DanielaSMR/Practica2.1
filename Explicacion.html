@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo</title>
+    <link rel="stylesheet" href="style.css">
+<script>
+function myFunction() {
+    alert("se a ejecutado el evento");
+}
+
+function funcion_nom(){
+    var nom = document.getElementById("name").value;
+    alert ('bienvenido' + " " + nom)
+}
+
+function funcion_edad(){
+    var age = document.getElementById("age").value;
+    alert ('con' + " " + age + " " + 'ya tendras el carnet de conducir.no?')
+}
+</script>
+</head>
+<body>
+    
+    <h1 class="verde">Esto es verde </h1>
+    <p>Escribe en el cuadrado</p>
+    <input type="text" onkeypress="myFuction()">
+    Introduce tu nombre: <input type="text" id="name" onblur="funcion_nom()">
+    Introduce tu edad: <input type="text" id="age" onblur="funcion_edad()">
+<!-- Cuando haces click 1 vez se cambia el parrafo-->
+    <p onclick="funcion1()">Este parrafo...</p>
+
+
+</body>
+</html>
